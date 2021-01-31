@@ -63,6 +63,7 @@ const PORT = process.env.PORT || 8080;
 
 //routes
 require("./routes/auth.routes")(app);
+require("./routes/user.routes")(app);
 
 //Make our server listen on our previous specified PORT
 app.listen(PORT, () => {
