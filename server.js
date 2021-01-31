@@ -61,6 +61,9 @@ If not, it will use PORT 8080
 */
 const PORT = process.env.PORT || 8080;
 
+//routes
+require("./routes/auth.routes")(app);
+
 //Make our server listen on our previous specified PORT
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
